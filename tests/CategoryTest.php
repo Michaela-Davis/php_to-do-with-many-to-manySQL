@@ -184,12 +184,12 @@
             $name = "Work Stuff";
             $id = 1;
             $test_category = new Category($name, $id);
-            $test_category->save;
+            $test_category->save();
 
             $description = "File reports";
             $id2 = 2;
             $test_task = new Task($description, $id2);
-            $test_task->save;
+            $test_task->save();
 
             ///   Act   ///
             $test_category->addTask($test_task);
@@ -204,12 +204,12 @@
             $name = "Home stuff";
             $id = 1;
             $test_category = new Category($name, $id);
-            $test_category->save;
+            $test_category->save();
 
             $description = "Wash the cat";
             $id2 = 2;
             $test_task = new Task($description, $id2);
-            $test_task->save;
+            $test_task->save();
 
             $description2 = "Trash out trash";
             $id3 = 3;
